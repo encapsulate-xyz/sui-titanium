@@ -45,7 +45,7 @@ export async function withdraw_rewards() {
 
 
     // 3. Sign Using Ledger
-    console.log('Open your Ledger, unlock it, and open the IOTA app to sign the transaction.....');
+    console.log('Open your Ledger, unlock it, and open the SUI app to sign the transaction.....');
     const {signature} = await signer.signTransaction(unStakeTxBytes);
     console.log("UnStakeSignature", signature)
 
